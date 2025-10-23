@@ -69,7 +69,8 @@ if st.button("Periksa Keamanan"):
             st.success("✅ URL ini aman menurut Google Safe Browsing.")
 
 st.markdown("---")
-st.caption("Dibuat dengan ❤️ menggunakan Streamlit + Google Safe Browsing API.")
+st.caption("Dibuat oleh Anugrah Jihad dengan ❤️ menggunakan Streamlit + Google Safe Browsing API.")
+
 
 
 
