@@ -13,7 +13,7 @@ st.markdown("Periksa apakah sebuah situs aman menggunakan **Google Safe Browsing
 # =============================
 # Ambil API key secara aman
 # =============================
-api_key = st.secrets.get("GOOGLE_SAFE_BROWSING_API_KEY", None)
+api_key = st.secrets.get("api", {}).get("google_safe_browsing")
 
 with st.sidebar:
     st.header("⚙️ Pengaturan")
@@ -85,3 +85,4 @@ if st.button("Periksa Keamanan"):
 
 st.markdown("---")
 st.caption("Dibuat dengan ❤️ menggunakan Streamlit + Google Safe Browsing API.")
+
