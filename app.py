@@ -15,21 +15,6 @@ st.markdown("Periksa apakah sebuah situs aman menggunakan **Google Safe Browsing
 # =============================
 api_key = st.secrets.get("api", {}).get("google_safe_browsing")
 
-with st.sidebar:
-    st.header("⚙️ Pengaturan")
-
-    if api_key:
-        st.success("✅ API key disimpan aman di server.")
-    else:
-        api_key = st.text_input(
-            "Masukkan Google API Key kamu",
-            type="password",
-            help="Masukkan API Key dari Google Cloud Console (https://console.cloud.google.com/apis/credentials)"
-        )
-
-    st.markdown("---")
-    st.info("Gunakan key dari secrets (otomatis) atau masukkan manual untuk testing pribadi.")
-
 # =============================
 # Fungsi cek keamanan URL
 # =============================
@@ -85,6 +70,7 @@ if st.button("Periksa Keamanan"):
 
 st.markdown("---")
 st.caption("Dibuat dengan ❤️ menggunakan Streamlit + Google Safe Browsing API.")
+
 
 
 
