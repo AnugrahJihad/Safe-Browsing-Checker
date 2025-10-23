@@ -25,13 +25,13 @@ Live Demo: https://safe-browse-lab.streamlit.app/
 ## 🧩 Struktur Proyek
 
 📁 web-checker/
-│
-├── app.py                 # Aplikasi utama
-├── requirements.txt       # Dependencies
-├── README.md             # Dokumentasi (file ini)
-├── .streamlit/
-│   └── secrets.toml      # API keys (jangan commit!)
-└── .gitignore           # File yang diabaikan Git
+      │
+      ├── app.py                 # Aplikasi utama
+      ├── requirements.txt       # Dependencies
+      ├── README.md             # Dokumentasi (file ini)
+      ├── .streamlit/
+      │   └── secrets.toml      # API keys (jangan commit!)
+      └── .gitignore           # File yang diabaikan Git
 
 ---
 
