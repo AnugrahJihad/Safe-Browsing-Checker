@@ -37,11 +37,11 @@ Live Demo: https://safe-browse-lab.streamlit.app/
 
 ## ⚙️ Quick Installation
 
-# 🛠️ Alat dan Bahan: 
+### 🛠️ Alat dan Bahan: 
 - Python 3.8 atau lebih tinggi
 - Google Safe Browsing API Key (Dapatkan di sini)
 
-# 💻 Instalasi Lokal
+### 💻 Instalasi Lokal
 1. Clone repositori
 git clone (https://github.com/AnugrahJihad/Safe-Browsing-Checker)
 cd Safe-Browsing-Checker
@@ -55,7 +55,7 @@ google_safe_browsing = "YOUR_API_KEY_HERE"
 
 pip install -r requirements.txt
 
-# 4. Jalankan aplikasi:
+4. Jalankan aplikasi:
 streamlit run app.py
 
 ---
@@ -63,15 +63,15 @@ streamlit run app.py
 ## ☁️ Deploy ke Streamlit Cloud
 
 Langkah-langkah:
-# 1. Fork/Push repository ini ke GitHub
-# 2. Buka Streamlit Cloud
-# 3. Klik "New app" dan pilih repository Anda
-# 4. Setup Secrets:
+### 1. Fork/Push repository ini ke GitHub
+### 2. Buka Streamlit Cloud
+### 3. Klik "New app" dan pilih repository Anda
+### 4. Setup Secrets:
       - Pergi ke Settings → Secrets
       - Tambahkan secrets berikut:
         [api]
         google_safe_browsing = "YOUR_API_KEY_HERE"
-# 5. Klik Deploy, dan aplikasi siap digunakan publik
+### 5. Klik Deploy, dan aplikasi siap digunakan publik
 
 ---
 
