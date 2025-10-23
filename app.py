@@ -7,7 +7,8 @@ from datetime import datetime
 # Konfigurasi dasar Streamlit
 # =============================
 st.set_page_config(
-    page_title="🛡️ Web Safety Checker",
+    page_title=" Web Safety Checker",
+    page_icon="🛡️",
     layout="centered"
 )
 
@@ -198,6 +199,7 @@ if submitted:
 st.markdown("---")
 st.caption("Dibuat oleh **Anugrah Jihad** dengan ❤️ menggunakan Streamlit + Google Safe Browsing API.")
 st.caption("⚠️ **Disclaimer:** Hasil pengecekan berdasarkan database Google Safe Browsing. Selalu gunakan pertimbangan pribadi saat mengunjungi situs web.")
+
 
 
 
