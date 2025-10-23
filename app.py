@@ -160,38 +160,38 @@ if submitted:
 # =============================
 # Sidebar: Riwayat dan Info
 # =============================
-with st.sidebar:
-    st.header("ℹ️ Informasi")
-    st.markdown("""
-    **Google Safe Browsing** melindungi miliaran perangkat setiap hari dengan:
-    - 🦠 Deteksi malware
-    - 🎣 Identifikasi phishing
-    - ⚠️ Peringatan software berbahaya
-    """)
-    
-    st.divider()
-    
-    # Tampilkan history
-    if st.session_state.history:
-        st.header("📋 Riwayat Pengecekan")
-        
-        # Tombol clear history
-        if st.button("🗑️ Hapus Riwayat", use_container_width=True):
-            st.session_state.history = []
-            st.rerun()
-        
-        # Tampilkan 10 pengecekan terakhir
-        for item in reversed(st.session_state.history[-10:]):
-            status_icon = "✅" if item["safe"] else "🚨"
-            status_text = "Aman" if item["safe"] else f"Tidak Aman ({item['threat_count']} ancaman)"
-            
-            with st.container():
-                st.markdown(f"""
-                **{status_icon} {item['url'][:35]}{"..." if len(item['url']) > 35 else ""}**  
-                <small>Status: {status_text}</small>  
-                <small style='color: gray;'>{item['timestamp']}</small>
-                """, unsafe_allow_html=True)
-                st.divider()
+#with st.sidebar:
+#    st.header("ℹ️ Informasi")
+#    st.markdown("""
+#    **Google Safe Browsing** melindungi miliaran perangkat setiap hari dengan:
+#    - 🦠 Deteksi malware
+#    - 🎣 Identifikasi phishing
+#    - ⚠️ Peringatan software berbahaya
+#    """)
+#    
+#    st.divider()
+#    
+#    # Tampilkan history
+#    if st.session_state.history:
+#        st.header("📋 Riwayat Pengecekan")
+#        
+#        # Tombol clear history
+#        if st.button("🗑️ Hapus Riwayat", use_container_width=True):
+#            st.session_state.history = []
+#            st.rerun()
+#        
+#        # Tampilkan 10 pengecekan terakhir
+#        for item in reversed(st.session_state.history[-10:]):
+#            status_icon = "✅" if item["safe"] else "🚨"
+#            status_text = "Aman" if item["safe"] else f"Tidak Aman ({item['threat_count']} ancaman)"
+#            
+#            with st.container():
+#                st.markdown(f"""
+#                **{status_icon} {item['url'][:35]}{"..." if len(item['url']) > 35 else ""}**  
+#                <small>Status: {status_text}</small>  
+#                <small style='color: gray;'>{item['timestamp']}</small>
+#                """, unsafe_allow_html=True)
+#                st.divider()
 
 # =============================
 # Footer
@@ -199,4 +199,5 @@ with st.sidebar:
 st.markdown("---")
 st.caption("Dibuat oleh **Anugrah Jihad** dengan ❤️ menggunakan Streamlit + Google Safe Browsing API.")
 st.caption("⚠️ **Disclaimer:** Hasil pengecekan berdasarkan database Google Safe Browsing. Selalu gunakan pertimbangan pribadi saat mengunjungi situs web.")
+
 
