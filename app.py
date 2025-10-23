@@ -61,6 +61,7 @@ def check_url_safety(url, api_key):
 # Input utama pengguna
 # =============================
 st.subheader("🔗 Masukkan URL yang ingin diperiksa:")
+url = st.text_input("Contoh: youtube.com")
 
 if st.button("Periksa Keamanan"):
     if not api_key:
@@ -84,5 +85,6 @@ if st.button("Periksa Keamanan"):
 
 st.markdown("---")
 st.caption("Dibuat dengan ❤️ menggunakan Streamlit + Google Safe Browsing API.")
+
 
 
