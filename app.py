@@ -197,5 +197,6 @@ with st.sidebar:
 # Footer
 # =============================
 st.markdown("---")
-st.caption("Dibuat oleh Anugrah Jihad dengan ❤️ menggunakan Streamlit + Google Safe Browsing API.")
+st.caption("Dibuat oleh **Anugrah Jihad** dengan ❤️ menggunakan Streamlit + Google Safe Browsing API.")
 st.caption("⚠️ **Disclaimer:** Hasil pengecekan berdasarkan database Google Safe Browsing. Selalu gunakan pertimbangan pribadi saat mengunjungi situs web.")
+
